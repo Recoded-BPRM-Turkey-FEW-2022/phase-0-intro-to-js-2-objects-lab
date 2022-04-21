@@ -16,18 +16,18 @@ const employee = {
   
     return employee;
   }
-  function deleteFromEmployeeByKey(driver, key) {
+  function deleteFromEmployeeByKey(employee, key) {
     // Alternate using ES6 Spread operators:
     // const newObj = { ...driver }
-    const newObj = Object.assign({}, driver);
+    const newObj = Object.assign({}, employee);
   
     delete newObj[key];
   
     return newObj;
   }
   
-  function destructivelyDeleteFromEmployeeByKey(driver, key) {
-    delete driver[key];
+  function destructivelyDeleteFromEmployeeByKey(employee, key) {
+    delete employee[key];
   
-    return driver;
+    return employee;
   }
